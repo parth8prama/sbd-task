@@ -96,15 +96,6 @@ class GetModelJob implements ShouldQueue
                                     $pdf = new \TonchikTm\PdfToHtml\Pdf($fileurl, [
                                         'pdftohtml_path' => 'C:\Users\Dell\Downloads\poppler\bin\pdftohtml.exe',
                                         'pdfinfo_path' => 'C:\Users\Dell\Downloads\poppler\bin\pdfinfo.exe',
-                                        'generate' => [ // settings for generating html
-                                            'singlePage' => true, // we want separate pages
-                                            'ignoreImages' => true, // we need images
-                                        ],
-                                        'html' => [ // settings for processing html
-                                            'inlineCss' => true, // replaces css classes to inline css rules
-                                            'inlineImages' => true, // looks for images in html and replaces the src attribute to base64 hash
-                                            'onlyContent' => true, // takes from html body content only
-                                        ]
                                     ]);
 
                                     // get content from one page
