@@ -16,6 +16,7 @@ class Vehicle extends Model
         'make',
         'trim',
         'style',
+        'pdf_data',
     ];
 
     protected $casts = [
